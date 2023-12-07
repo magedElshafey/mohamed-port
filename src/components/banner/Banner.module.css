@@ -1,0 +1,17 @@
+/* .banner {
+  height: 300px;
+  width: 100%;
+  margin: auto !important;
+  object-fit: cover;
+}
+@media screen and (max-width: 650px) {
+  .banner {
+    height: 150px;
+  }
+} */
+.mainDiv {
+  background-image: url("../../assets/banner.avif");
+  background-size: cover;
+  width: 100vw;
+  height: 700px;
+}

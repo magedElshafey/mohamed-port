@@ -1,0 +1,44 @@
+.mainContainer {
+  position: relative;
+}
+.mainContainer::before {
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: #eee;
+  position: absolute;
+  top: calc(50% + 50px);
+  left: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.mainContainer::after {
+  content: "";
+  width: 48%;
+  height: 1px;
+  background-color: #eee;
+  position: absolute;
+  top: calc(50% + 50px);
+  right: 0;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}

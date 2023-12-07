@@ -1,0 +1,95 @@
+.mailContainer,
+.whatsContainer,
+.linkedinContainer,
+.githubContainer,
+.phone {
+  z-index: 15;
+  position: fixed;
+
+  left: 0;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  color: black !important;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  cursor: pointer;
+  background-color: #f0f0f0f0;
+}
+@media screen and (max-width : 600px) {
+  .mailContainer,
+.whatsContainer,
+.linkedinContainer,
+.githubContainer,
+.phone {
+  width: 25px;
+  height: 25px;
+}
+}
+.mailContainer {
+  top: 40%;
+  transform: translateY(-40%);
+  -webkit-transform: translateY(-40%);
+  -moz-transform: translateY(-40%);
+  -ms-transform: translateY(-40%);
+  -o-transform: translateY(-40%);
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.whatsContainer {
+  top: calc(40% + 45px);
+  transform: translateY(-40%);
+  -webkit-transform: translateY(-40%);
+  -moz-transform: translateY(-40%);
+  -ms-transform: translateY(-40%);
+  -o-transform: translateY(-40%);
+}
+.phone {
+  top: calc(40% + 90px);
+  transform: translateY(-40%);
+  -webkit-transform: translateY(-40%);
+  -moz-transform: translateY(-40%);
+  -ms-transform: translateY(-40%);
+  -o-transform: translateY(-40%);
+}
+.linkedinContainer {
+  top: calc(40% + 135px);
+  transform: translateY(-40%);
+  -webkit-transform: translateY(-40%);
+  -moz-transform: translateY(-40%);
+  -ms-transform: translateY(-40%);
+  -o-transform: translateY(-40%);
+}
+.githubContainer {
+  top: calc(40% + 180px);
+  transform: translateY(-40%);
+  -webkit-transform: translateY(-40%);
+  -moz-transform: translateY(-40%);
+  -ms-transform: translateY(-40%);
+  -o-transform: translateY(-40%);
+}
+.mailContainer a,
+.whatsContainer a,
+.linkedinContainer a,
+.githubContainer a,
+.icon a {
+  color: black !important;
+}
+.mailContainer:hover,
+.whatsContainer:hover,
+.linkedinContainer:hover,
+.githubContainer:hover,
+.phone:hover {
+  width: 55px;
+  background-color: var(--mainColor);
+}
+.mailContainer:hover a,
+.whatsContainer:hover a,
+.linkedinContainer:hover a,
+.githubContainer:hover a,
+.phone:hover .icon {
+  color: white !important;
+}

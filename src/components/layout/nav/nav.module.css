@@ -1,0 +1,78 @@
+.navContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000 !important;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  object-fit: cover;
+  position: relative;
+  left: -30px;
+}
+@media screen and (max-width: 767px) {
+  .logo {
+    left: 0;
+  }
+}
+.links {
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--mainColor) !important;
+  position: relative;
+}
+.links::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  height: 2px;
+  background-color: var(--mainColor);
+  width: 0;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.links:hover::before {
+  width: 100%;
+}
+
+.menu {
+  color: var(--mainColor);
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  width: 320px;
+  color: white;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.show {
+  right: 0;
+}
+.hide {
+  right: -300%;
+}
+.bg {
+  background-color: white !important;
+  border-bottom: 1px solid var(--mainColor);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.nonBg {
+  border-bottom: none;
+  box-shadow: none;
+}

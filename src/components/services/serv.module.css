@@ -1,0 +1,26 @@
+.mainContainer {
+  background-color: white;
+
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.servIcon {
+  position: absolute;
+  left: 50%;
+  top: -40px;
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.servTitle {
+  font-size: 20px;
+  color: var(--mainColor);
+}
